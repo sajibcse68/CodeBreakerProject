@@ -46,7 +46,6 @@ function getResults(input) {
     for (let i = 0; i < len; i++) {
       if (input.charAt(i) === answer.value.charAt(i)) {
           html += '<span class="glyphicon glyphicon-ok"></span>';
-          correct++;
       } else if (answer.value.indexOf(input.charAt(i)) > -1) {
           html += '<span class="glyphicon glyphicon-transfer"></span>';
           match = false;
