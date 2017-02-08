@@ -9,7 +9,7 @@ function guess() {
     if (!validateInput(input.value)) {
         return false;
     }
-    attempt.value += 1;
+    attempt.value++;
 
     if(getResults(input.value)) {
         setMessage('You Win! :)');
